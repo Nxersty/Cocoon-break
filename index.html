@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>破茧</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/chart.js/dist/Chart.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>破茧</h1>
+        <div class="chart-container" id="chart-container"></div> <!-- 图表容器 -->
+        <div class="flex-container">
+            <div class="left-panel">
+                <div class="label-section">
+                    <p>点击标签以统计阅读内容：</p>
+                    <div id="label-buttons" class="label-buttons"></div>
+                    <div class="custom-label-section">
+                        <input type="text" id="custom-label" placeholder="自定义标签">
+                        <button id="add-custom-label">添加</button>
+                    </div>
+                </div>
+                <div class="detection-section">
+                    <input type="text" id="text-content" placeholder="输入文本内容">
+                    <button id="auto-detect">自动识别并统计</button>
+                </div>
+                <div class="chart-generation-section">
+                    <button id="generate-chart">生成统计柱状图</button>
+                </div>
+            </div>
+            <div class="right-panel">
+                <button id="return-button" class="return-button" style="display: none;">返回</button>
+            </div>
+        </div>
+        <button id="custom-ai-button" class="custom-ai-button">自定义AI功能</button>
+    </div>
+
+    <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js/dist/Chart.min.js"></script>
+</body>
+</html>

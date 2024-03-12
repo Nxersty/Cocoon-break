@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.instruction {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.chart-container {
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 70%;
+    max-width: 600px;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.left-panel {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.right-panel {
+    flex: 1;
+}
+
+.label-section,
+.detection-section,
+.chart-generation-section {
+    margin-bottom: 20px;
+}
+
+.label-buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.label-buttons button {
+    margin: 5px;
+}
+
+.custom-label-section {
+    display: flex;
+}
+
+.custom-label-section input[type="text"] {
+    flex: 1;
+}
+
+.custom-label-section button {
+    margin-left: 10px;
+    width: 100px;
+}
+
+.detection-section input[type="text"],
+.chart-generation-section button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.return-button,
+.custom-ai-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.return-button:hover,
+.custom-ai-button:hover,
+#generate-chart:hover,
+#auto-detect:hover,
+#add-custom-label:hover {
+    background-color: #218838;
+}
+
+.label-buttons button {
+    margin: 5px;
+    padding: 8px 16px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.label-buttons button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.label-buttons button:nth-child(1) {
+    background-color: #ff4d4d;
+}
+
+.label-buttons button:nth-child(2) {
+    background-color: #ffcc33;
+}
+
+.label-buttons button:nth-child(3) {
+    background-color: #33cc33;
+}
+
+.label-buttons button:nth-child(4) {
+    background-color: #3399ff;
+}
+
+.label-buttons button:nth-child(5) {
+    background-color: #ff66ff;
+}
+
+.label-buttons button:nth-child(6) {
+    background-color: #9966ff;
+}
+
+.label-buttons button:nth-child(7) {
+    background-color: #ff9966;
+}
